@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 16, 2018, 12:39:12 PM
+    Author     : Md. Rubel
+*/
+
+      .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      }
+      ul.parsley-errors-list {
+      padding: 0px;
+      padding-top: 5px;
+      }    
+      ul.parsley-errors-list li {
+      list-style: none;
+      color:red;
+      }
+      .parsley-error{
+      border: 1px red solid !important; 
+      }
+      .parsley-success{
+      border: 1px green solid !important;  
+      }
+      .mt30{
+      margin-top: 25px;
+      }
+      .fc-event {
+      padding: 5px;
+      margin: 5px;
+      cursor: pointer;
+ 
+      }
+      
+      .loader{
+	position: absolute;
+	margin-left: 40%;
+	z-index: 9999;
+}
+   

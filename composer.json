@@ -1,0 +1,19 @@
+{
+    "name": "latfur/event-with-full-calendar",
+    "description": "Larave Event CRUD  With Full Calendar",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "latfur",
+            "email": "rubel.itlive@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+      "autoload": {
+        "psr-4": {
+            "Latfur\\Event\\": "src/"
+        }
+    }
+}
