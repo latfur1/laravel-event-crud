@@ -348,7 +348,7 @@
     @section('content_script')
       <script>
 
-var loader='<img class="loader" src="<?php echo asset('public/vendor/event/image/ajax-loader.gif')?>"/>';
+var loader='<img class="loader" src="<?php echo asset('vendor/event/image/ajax-loader.gif')?>"/>';
 $(document).ready(function(){
 
 get_data();
