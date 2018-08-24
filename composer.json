@@ -15,5 +15,13 @@
         "psr-4": {
             "Latfur\\Event\\": "src/"
         }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Latfur\\Event\\EventServiceProvider"
+        ]
+        
     }
+}
 }
