@@ -1,5 +1,5 @@
 {
-    "name": "latfur/event-with-full-calendar",
+    "name": "latfur/laravel-event-crud",
     "description": "Larave Event CRUD  With Full Calendar",
     "type": "library",
     "license": "MIT",
