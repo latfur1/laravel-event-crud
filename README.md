@@ -1,7 +1,6 @@
 #laravel event crud
 
 [![Issues](https://img.shields.io/github/issues/latfur1/laravel-event-crud.svg?style=flat-square)](https://github.com/latfur1/laravel-event-crud/issues)
-
 [![Stars](https://img.shields.io/github/stars/latfur1/laravel-event-crud.svg?style=flat-square)](https://github.com/latfur1/laravel-event-crud/stargazers)
 
 
