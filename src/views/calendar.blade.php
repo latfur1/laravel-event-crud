@@ -1,4 +1,3 @@
-
 @extends('event::layouts')
 @section('content')
         <div class="panel panel-primary">
@@ -229,21 +228,18 @@
           </div>
         </div>
         
-        @endsection
+@endsection
         
         
-    @section('content_script')
+@section('content_script')
    
-  <script>
+<script>
  var loader='<img class="loader" src="<?php echo asset('vendor/event/image/ajax-loader.gif')?>"/>';     
  var calender_data_url = "{{route('all-event')}}";
      
     $( document ).ready(function() {
          
      $(function() {
-
-  // page is now ready, initialize the calendar...
-
   $('#calendar').fullCalendar({
      height: 800,
     header: {
@@ -259,18 +255,11 @@
        events: window.calender_data_url,
  
   	   axisFormat: 'h:mm',
-	    timeFormat: 'hh:mm A',
-			
-//          defaultView: 'agendaDay',
+	    timeFormat: 'hh:mm A',	
             editable: false,
             droppable: false,
-          
-	    eventTextColor:"#FFF",
-	eventColor:"#337AB7",
-      
-		
-            // the 'ev' parameter is the mouse event rather than the resource 'event'
-            // the ev.data is the resource column clicked upon
+            eventTextColor:"#FFF",
+	    eventColor:"#337AB7",
             selectable: true,
             selectHelper: true,
             eventLimit: 4,
