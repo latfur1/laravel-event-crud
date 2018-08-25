@@ -6,53 +6,36 @@
             <button id="create_event"  type="button" class="btn btn-success btn-md"><i class="fa fa-plus"></i>  Create Event</button>
           </div>
           <div class="panel-body">
-          
               <div id="alert_tmeassage_area"></div>
-              
-          
                  <div class="table-responsive">
                   <table id="data_table" class="table">
                   <thead>
                     <tr class="bg-light">
-                 <th >#</th>
-                      <th >Title</th>
-                        <th >Time</th>
-                    
-                       <th >Crete</th>
-                     
+                      <th>#</th>
+                      <th>Title</th>
+                      <th >Time</th>
+                      <th >Crete</th>
                       <th class="text-right">Action</th>
-
                     </tr>
                   </thead>
                   <tbody>
-                    
                   </tbody>
                 </table>
-                  
-                 
               </div>
           </div>
-        </div>
-<!--          View Event-->
-           <div class="modal fade" id="view_event_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-           <div class="modal-dialog" >
-                            
-                                        
+    </div>
+
+<!-- View Event-->
+    <div class="modal fade" id="view_event_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog" >                           
             <div class="modal-content admin-form">
-            
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title" id="myModalLabel">View Event</h4>
-                </div>
-   
-              
-                  
+                </div> 
                 <div class="modal-body">
-                 
                    <div id="view_event_alert"></div>
-                   
-                  <div class="section row">
-                      
+                   <div class="section row">
                     <div class="col-md-12 col-xs-12">
                         <div class="section row">
                         <div class="col-lg-12 col-xs-12">
@@ -60,15 +43,9 @@
                           <label for="" class="field">
                               <span id="view_event_title"></span>
                           </label>
-                          
-                        </div>
+                        </div>     
+                         </div>
                         
-                            
-                      </div>
-                        
-                      
-                       
-                      
                          <div class="section row">
                           
                           <div class="col-lg-12 col-xs-12">
@@ -76,22 +53,10 @@
                      
                           <label for="" class="field">
                               <span id="view_event_time"></span>
-                          </label>
-                        
-                               
-                            </div> 
-                           
-                          
-                          
-                         
-                             
-                              
-                           
+                          </label>         
+                            </div>              
                       </div>
-                        
-                       
-                        
-                           <div class="section row">
+                  <div class="section row">
                     
                     <div class="col-md-12">
                         
@@ -107,10 +72,6 @@
                     </div>
                   
                   </div>
-                  <!-- end section row -->
-           
-      
-                    
                    
                 </div>
                 <div class="modal-footer">
@@ -348,7 +309,7 @@
     @section('content_script')
       <script>
 
-var loader='<img class="loader" src="<?php echo asset('vendor/event/image/ajax-loader.gif')?>"/>';
+var loader='<img class="loader" src="<?php echo asset('public/vendor/event/image/ajax-loader.gif')?>"/>';
 $(document).ready(function(){
 
 get_data();

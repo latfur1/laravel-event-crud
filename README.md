@@ -4,3 +4,4 @@
 [![Stars](https://img.shields.io/github/stars/latfur1/laravel-event-crud.svg?style=flat-square)](https://github.com/latfur1/laravel-event-crud/stargazers)
 
 ## Laravel Event CRUD with Full calendar
+
