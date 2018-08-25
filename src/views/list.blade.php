@@ -3,7 +3,7 @@
 
    <div class="panel panel-primary">
           <div class="panel-heading text-right">
-            <button id="create_event"  type="button" class="btn btn-success btn-md "><i class="fa fa-plus"></i>  Create Event</button>
+            <button id="create_event"  type="button" class="btn btn-success btn-md"><i class="fa fa-plus"></i>  Create Event</button>
           </div>
           <div class="panel-body">
           
@@ -11,14 +11,14 @@
               
           
                  <div class="table-responsive">
-                  <table id="data_table" class="table ">
+                  <table id="data_table" class="table">
                   <thead>
                     <tr class="bg-light">
-                 <th class="">#</th>
-                      <th class="">Title</th>
-                        <th class="">Time</th>
+                 <th >#</th>
+                      <th >Title</th>
+                        <th >Time</th>
                     
-                       <th class="">Crete</th>
+                       <th >Crete</th>
                      
                       <th class="text-right">Action</th>
 
@@ -35,7 +35,7 @@
         </div>
 <!--          View Event-->
            <div class="modal fade" id="view_event_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-           <div class="modal-dialog " >
+           <div class="modal-dialog" >
                             
                                         
             <div class="modal-content admin-form">
@@ -47,16 +47,16 @@
    
               
                   
-                <div class="modal-body ">
+                <div class="modal-body">
                  
                    <div id="view_event_alert"></div>
                    
-                  <div class="section row mbn">
+                  <div class="section row">
                       
-                    <div class="col-md-12 col-xs-12 pl15">
-                        <div class="section row mb15">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="section row">
                         <div class="col-lg-12 col-xs-12">
-                              <label class="pt5 pb5 fw600">Event Title</label>
+                              <label class="">Event Title</label>
                           <label for="" class="field">
                               <span id="view_event_title"></span>
                           </label>
@@ -69,10 +69,10 @@
                       
                        
                       
-                         <div class="section row mb15">
+                         <div class="section row">
                           
                           <div class="col-lg-12 col-xs-12">
-                              <label class="pt5 pb5 fw600">Time</label>
+                              <label class="">Time</label>
                      
                           <label for="" class="field">
                               <span id="view_event_time"></span>
@@ -91,11 +91,11 @@
                         
                        
                         
-                           <div class="section row ">
+                           <div class="section row">
                     
                     <div class="col-md-12">
                         
-                        <label class="pt5 pb5 fw600">Event Description</label>
+                        <label class="">Event Description</label>
                          <label for="" class="field">
                               <span id="view_event_description"></span>
                           </label>
@@ -128,17 +128,17 @@
           
         <!--     Create Event  -->        
         <div class="modal fade" id="create_event_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog " >
+          <div class="modal-dialog" >
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Create Event</h4>
               </div>
-              <div class="modal-body ">
+              <div class="modal-body">
                 <div id="create_event_alert"></div>
                 <form id="create_event_frm"  action="{{route('event')}}"  method="post" enctype="multipart/form-data"  >
                      {{ csrf_field() }}
-                  <div class=" row mb15">
+                  <div class="row">
                     <div class="col-lg-12 col-xs-12">
                       <div class="form-group">
                         <input type="text" name="event_title" id="event_title" required=""  class="form-control" placeholder="Event Title">
@@ -148,7 +148,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class=" row mb15">
+                  <div class="row">
                     <div class="pull-left" style="width: 75%;">
                       <div class="col-lg-5 col-xs-12">
                         <div class="form-group">
@@ -179,7 +179,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="section row mb15" id="end_date_area" style="display: none">
+                  <div class="section row" id="end_date_area" style="display: none">
                     <!--                            none-->
                     <div class="pull-left" style="width: 75%;">
                       <div class="col-lg-5 col-xs-12">
@@ -197,7 +197,7 @@
                       </div>
                       <div class="col-lg-5 col-xs-12" id="event_end_time_area" style="display: none">
                         <!--                    //none-->
-                        <input type="text"   name="event_end_time" id="event_end_time" value="11:59 PM" class="form-control time_pick " placeholder="End Time">
+                        <input type="text"   name="event_end_time" id="event_end_time" value="11:59 PM" class="form-control time_pick" placeholder="End Time">
                       </div>
                     </div>
                     <div class="pull-right">
@@ -207,14 +207,14 @@
                     </div>
                   </div>
                 
-                  <div class="section row ">
+                  <div class="section row">
                     <div class="col-md-12">
                       <div class="form-group">
                         <textarea class="form-control" id="event_description" name="event_description" placeholder="Description" ></textarea>
                       </div>
                     </div>
                   </div>
-                  <div class="section mb10 " style="margin-top: 10px">
+                  <div class="section" style="margin-top: 10px">
                     <div  class="text-right"id="event_image_error_msg"></div>
                     <p class="text-right">
                         <button type="button" id="create_event_btn"  class="btn btn-primary">Save</button>
@@ -234,21 +234,21 @@
         
         <!--     Edit Event  -->
         <div class="modal fade" id="edit_event_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog " >
+          <div class="modal-dialog" >
             <div class="modal-content admin-form">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Edit Event</h4>
               </div>
-              <div class="modal-body ">
+              <div class="modal-body">
                 <div id="edit_event_alert"></div>
                 <form id="edit_event_frm" action=""  method="post" enctype="multipart/form-data"  >
                      {{ csrf_field() }}
 
-                  <div class=" row mb15">
+                  <div class="row">
                     <div class="col-lg-12 col-xs-12">
                       <div class="form-group">
-                        <label class="pt5 pb5 fw600">Event Title</label>
+                        <label class="">Event Title</label>
                         <input type="text" name="event_title" id="edit_event_title" required=""  class="form-control" placeholder="Event Title">
                       </div>
                       <input  type="hidden" id="edit_event_id" value="" name="id" />  
@@ -257,11 +257,11 @@
                       <input  type="hidden" name="set_end_date_data" id="edit_set_end_date_data" value="Yes" />  
                     </div>
                   </div>
-                  <div class=" row mb15">
+                  <div class="row">
                     <div class="pull-left" style="width: 75%;">
                       <div class="col-lg-5 col-xs-12">
                         <div class="form-group">
-                          <label class="pt5 pb5 fw600">Start Date</label>
+                          <label class="">Start Date</label>
                           <input type="text"   name="event_start_date" required="" id="edit_event_start_date" value="" class="form-control date_pick" placeholder="Start Date">
                         </div>
                       </div>
@@ -275,8 +275,8 @@
                       </div>
                       <div class="col-lg-5 col-xs-12" id="edit_event_start_time_area" style="display: block">
                         <div class="form-group">
-                          <label class="pt5 pb5 fw600">Start Time</label>
-                          <input type="text"   name="event_start_time" id="edit_event_start_time" value="" class="form-control time_pick " placeholder="Start Time">
+                          <label class="">Start Time</label>
+                          <input type="text"   name="event_start_time" id="edit_event_start_time" value="" class="form-control time_pick" placeholder="Start Time">
                         </div>
                       </div>
                     </div>
@@ -289,11 +289,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class=" row mb15" id="edit_end_date_area" style="display: block">
+                  <div class="row" id="edit_end_date_area" style="display: block">
                     <div class="pull-left" style="width: 75%;">
                       <div class="col-lg-5 col-xs-12">
                         <div class="form-group">
-                          <label class="pt5 pb5 fw600">End Date</label>
+                          <label class="">End Date</label>
                           <input type="text"   name="event_end_date" id="edit_event_end_date" value="" class="form-control date_pick" placeholder="End Date">
                         </div>
                       </div>
@@ -307,8 +307,8 @@
                       </div>
                       <div class="col-lg-5 col-xs-12" id="edit_event_end_time_area" style="display: block">
                         <div class="form-group">
-                          <label class="pt5 pb5 fw600">End Time</label>
-                          <input type="text"   name="event_end_time" id="edit_event_end_time" value="" class="form-control time_pick " placeholder="End Time">
+                          <label class="">End Time</label>
+                          <input type="text"   name="event_end_time" id="edit_event_end_time" value="" class="form-control time_pick" placeholder="End Time">
                         </div>
                       </div>
                     </div>
@@ -319,15 +319,15 @@
                     </div>
                   </div>
                   
-                  <div class=" row ">
+                  <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label class="pt5 pb5 fw600">Event Description</label>
+                        <label class="">Event Description</label>
                         <textarea class="form-control" id="edit_event_description" name="event_description" placeholder="Description" ></textarea>
                       </div>
                     </div>
                   </div>
-                  <div class="section mb10 " style="margin-top: 10px">
+                  <div class="section" style="margin-top: 10px">
                     <p class="text-right">
                       <button type="button" id="edit_event_btn"  class="btn btn-primary">Update</button>
                     </p>
@@ -373,8 +373,8 @@ function get_data(){
             
                 html += '<td class="text-right">';
                 html += '<a  onclick="delete_event('+ad[i].events_id+')"  class="btn btn-sm  btn-danger"    href="javascript:;" ><i class="fa fa-trash"></i></a> ';
-                html += '<a href="javascript:;"  onclick="edit_event('+ad[i].events_id+')"    class="btn btn-sm btn-warning  "><i class="fa fa-edit"></i> </a> ';
-		html += '<a href="javascript:;"  onclick="view_event('+ad[i].events_id+')"     class="btn btn-primary btn-sm "><i class="fa fa-eye"></i> </a> ';
+                html += '<a href="javascript:;"  onclick="edit_event('+ad[i].events_id+')"    class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> </a> ';
+		html += '<a href="javascript:;"  onclick="view_event('+ad[i].events_id+')"     class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> </a> ';
                 html += '</td>';
                 html += '</tr>';
               })
@@ -788,8 +788,6 @@ $("#edit_event_btn").click(function(){
      
      
 if($('#edit_event_frm').parsley().validate()==true  && edit_date_compare()==true ){
-  
-   // $('#edit_event_frm').submit();
 $('#edit_event_alert').show().html(loader); 
 var action="{{url('update-event')}}";
 var formData = new FormData($('#edit_event_frm')[0]);
@@ -837,47 +835,35 @@ var formData = new FormData($('#edit_event_frm')[0]);
 
 
 function edit_date_compare(){
-     var event_start_date = $('#edit_event_start_date').val().split("/");
+      var event_start_date = $('#edit_event_start_date').val().split("/");
       var event_start_time=$('#edit_event_start_time').val();
       var start_data=event_start_date[2]+' '+event_start_date[1]+' '+event_start_date[0]+' '+event_start_time ;
       var start_time = new Date(start_data).getTime();
-  
-  
       var event_end_date = $('#edit_event_end_date').val().split("/");
       var event_end_time=$('#edit_event_end_time').val();
       var end_data=event_end_date[2]+' '+event_end_date[1]+' '+event_end_date[0]+' '+event_end_time ;
       var end_time = new Date(end_data).getTime();
       $("#edit_event_alert").html('');
      
-   if($('#edit_set_end_date_data').val()=="Yes"){
-    
-    if(start_time>end_time){
+        if($('#edit_set_end_date_data').val()=="Yes"){
+             if(start_time>end_time){
+              $('#edit_event_alert').show().html('<div class="alert alert-danger"><a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>End time must be bigger then Start time</div>');
+              return false;    
+             }else{
+              return true; 
+             }
 
-
-       $('#edit_event_alert').show().html('<div class="alert alert-danger"><a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>End time must be bigger then Start time</div>');            
-          
-    return false;
-     //   return false;
-        
-    }else{
-         return true; 
-    }
-   
-}else{
-       return true; 
-}
+         }else{
+            return true; 
+         }
 
 
 }
   function delete_event(event_id){
-     
-    
         var token = '<?php echo csrf_token(); ?>';
-        $.ajax(
-        {
+        $.ajax({
             url: "{{url('delete-event')}}/"+event_id,
             type: 'DELETE',
-           
             data: {
                 "id": event_id,
                 "_token": token,
@@ -885,32 +871,18 @@ function edit_date_compare(){
             success: function (response)
             {
             response = $.parseJSON(response);  
-         if(response.type=='alert-success'){
-           
-           $('#alert_tmeassage_area').show().html('<div class="alert '+response.type+'"><a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>'+response.message+'</div>');     
-          get_data();
-          }else{    
-         $('#alert_tmeassage_area').show().html('<div class="alert '+response.type+'"><a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>'+response.message+'</div>');            
-           
-        }
+               if(response.type=='alert-success'){
+                  $('#alert_tmeassage_area').show().html('<div class="alert '+response.type+'"><a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>'+response.message+'</div>');     
+                  get_data();
+               }else{    
+                  $('#alert_tmeassage_area').show().html('<div class="alert '+response.type+'"><a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>'+response.message+'</div>');            
+
+               }
             }
         });
-
-    
-    
    }
 
-   function delete_eventx(event_id){
-           var delete_url = "{{url('delete-event')}}/"+event_id;
-          $.get(delete_url, function (r) {
-            var edata = $.parseJSON(r);
-            
-         
-         
-       
-  
-   });
-   }
+
 
     </script>
 
