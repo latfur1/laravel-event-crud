@@ -137,10 +137,10 @@
                         <label class="">Event Title</label>
                         <input type="text" name="event_title" id="edit_event_title" required=""  class="form-control" placeholder="Event Title">
                       </div>
-                      <input  type="hidden" id="edit_event_id" value="" name="id" />  
-                      <input  type="hidden" id="edit_set_start_time_data" value="Yes" />  
-                      <input  type="hidden" id="edit_set_end_time_data" value="Yes" />  
-                      <input  type="hidden" name="set_end_date_data" id="edit_set_end_date_data" value="Yes" />  
+                      <input type="hidden" id="edit_event_id" value="" name="id" />  
+                      <input type="hidden" id="edit_set_start_time_data" value="Yes" />  
+                      <input type="hidden" id="edit_set_end_time_data" value="Yes" />  
+                      <input type="hidden" name="set_end_date_data" id="edit_set_end_date_data" value="Yes" />  
                     </div>
                   </div>
                   <div class=" row">
