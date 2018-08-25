@@ -176,7 +176,7 @@
                     </div>
                   </div>
                   <div class="section" style="margin-top: 10px">
-                    <div  class="text-right"id="event_image_error_msg"></div>
+                    <div  class="text-right" id="event_image_error_msg"></div>
                     <p class="text-right">
                         <button type="button" id="create_event_btn"  class="btn btn-primary">Save</button>
                     </p>

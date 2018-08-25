@@ -5,3 +5,7 @@
 
 ## Laravel Event CRUD with Full calendar
 
+
+composer require latfur/laravel-event-crud
+
+  Latfur\Event\EventServiceProvider::class,
