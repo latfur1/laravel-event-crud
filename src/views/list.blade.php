@@ -47,7 +47,6 @@
                          </div>
                         
                          <div class="section row">
-                          
                           <div class="col-lg-12 col-xs-12">
                               <label class="">Time</label>
                      
@@ -66,9 +65,7 @@
                           </label>
                    
                       </div>
-                </div>
-                 
-                     
+                </div>   
                     </div>
                   
                   </div>
@@ -77,11 +74,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                   
-                </div>
-                      
-                    
-            
-                     
+                </div>         
         </div>
     </div>   
       
@@ -190,8 +183,7 @@
             </div>
           </div>  
         </div>
-        
-        
+           
         
         <!--     Edit Event  -->
         <div class="modal fade" id="edit_event_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -309,7 +301,7 @@
     @section('content_script')
       <script>
 
-var loader='<img class="loader" src="<?php echo asset('public/vendor/event/image/ajax-loader.gif')?>"/>';
+var loader='<img class="loader" src="<?php echo asset('vendor/event/image/ajax-loader.gif')?>"/>';
 $(document).ready(function(){
 
 get_data();
@@ -329,11 +321,11 @@ function get_data(){
                  html += '<tr>';
                 html += '<td class="text-left">'+(i+1)+'</td>';
                 html += '<td class="text-left">'+ad[i].title+'</td>';
-                html += '<td>'+ad[i].start_formate+' '+ad[i].end_formate+'</td>';	
+                html += '<td>'+ad[i].start_formate+' - '+ad[i].end_formate+'</td>';	
                 html += '<td>'+ad[i].created_at+'</td>';	
             
                 html += '<td class="text-right">';
-                html += '<a  onclick="delete_event('+ad[i].events_id+')"  class="btn btn-sm  btn-danger"    href="javascript:;" ><i class="fa fa-trash"></i></a> ';
+                html += '<a onclick="delete_event('+ad[i].events_id+')"  class="btn btn-sm  btn-danger"    href="javascript:;" ><i class="fa fa-trash"></i></a> ';
                 html += '<a href="javascript:;"  onclick="edit_event('+ad[i].events_id+')"    class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> </a> ';
 		html += '<a href="javascript:;"  onclick="view_event('+ad[i].events_id+')"     class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> </a> ';
                 html += '</td>';

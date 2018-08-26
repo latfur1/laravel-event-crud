@@ -8,4 +8,8 @@
 
 composer require latfur/laravel-event-crud
 
-  Latfur\Event\EventServiceProvider::class,
+Latfur\Event\EventServiceProvider::class,
+
+php artisan vendor:publish --provider="Latfur\Event\EventServiceProvider"
+
+php artisan migrate
