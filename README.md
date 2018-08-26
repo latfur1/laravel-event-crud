@@ -19,17 +19,23 @@
 * Front end validation
 * Back end validation
 
+### Resource:
+
+* Bootstrap
+* Fullcalendar
+* parsley js
+* bootstrap-datetimepicker
 
 
 ### Installation
 
-Talk is a Laravel package so you can install it via Composer. Run this command in your terminal from your project directory:
+Event CRUD is a Laravel package so you can install it via Composer. Run this command in your terminal from your project directory:
 
 ```
 composer require latfur/laravel-event-crud
 ```
 
-Wait for a while, Composer will automatically install Talk in your project.
+Wait for a while, Composer will automatically install Event CRUD in your project.
 
 ### Configuration
 
@@ -53,6 +59,11 @@ After running this command, all necessary file will be included in your project.
 php artisan migrate
 ```
 
+### Usage
+
+It is very easy to use.
+
+http://127.0.0.1:8000/event
 
 
 
