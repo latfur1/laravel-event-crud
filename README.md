@@ -23,8 +23,8 @@
 
 * Bootstrap
 * Fullcalendar
-* parsley js
-* bootstrap-datetimepicker
+* Parsley js
+* Bootstrap Datetimepicker
 
 
 ### Installation
