@@ -6,7 +6,9 @@
 ## Laravel Event CRUD with Full calendar
 
 
-![Event-Example Screenshot](https://i.imgur.com/QelTYBq.png "Event-Example Project")![Event-Example Screenshot](https://i.imgur.com/oU65046.png "Event-Example Project")
+![Event-Example Screenshot](https://i.imgur.com/QelTYBq.png "Event-Example Project")
+
+![Event-Example Screenshot](https://i.imgur.com/oU65046s.png "Event-Example Project")
 
 
 ### Features
