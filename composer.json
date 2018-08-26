@@ -2,15 +2,30 @@
     "name": "latfur/laravel-event-crud",
     "description": "Laravel Event CRUD With Full Calendar",
     "type": "library",
+    "keywords": ["Event", "Full Calendar", "Event CRUD", "Laravel CRUD", "php", "laravel", "Ajax", "Event Management"],
+    "homepage": "https://github.com/nahid/talk",
     "license": "MIT",
     "authors": [
         {
-            "name": "latfur",
+            "name": "Md. Latur Rahman Rubel",
             "email": "rubel.itlive@gmail.com"
         }
     ],
+    
+    
+  "require": {
+    "php": ">=5.6.0",
+    "illuminate/contracts": ">=5.0.0",
+    "illuminate/support": ">=5.0.0"
+   
+  },
+  "require-dev": {
+    "graham-campbell/testbench": "^3.1",
+    "phpunit/phpunit": "^4.8 || ^5.0"
+},
+     
     "minimum-stability": "dev",
-    "require": {},
+
       "autoload": {
         "psr-4": {
             "Latfur\\Event\\": "src/"
@@ -23,5 +38,6 @@
         ]
         
     }
-}
+},
+  "prefer-stable": true
 }
