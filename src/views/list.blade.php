@@ -49,7 +49,6 @@
                          <div class="section row">
                           <div class="col-lg-12 col-xs-12">
                               <label class="">Time</label>
-                     
                           <label for="" class="field">
                               <span id="view_event_time"></span>
                           </label>         
